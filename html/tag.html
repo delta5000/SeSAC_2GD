@@ -1,0 +1,133 @@
+<!-- 6월 14일 html 입문 강의 정리 노트 -->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>오늘의 일기</h2>
+    <p>오늘은 첫번째 html수업을 했당.
+        <br>멋지당</p>
+    <hr />
+    <h4>오늘의 할 일</h4>
+    <ul type="">
+    <!-- type의 속성값 (ul 내부의 리스트 앞에 붙은 모양들 바꾸는 것)
+        -disc (기본값, default) 
+        -circle
+        -none
+    -->
+        <li>html 복습하기</li>
+        <li>점심 먹기</li>
+        <li>운동 하기</li>
+    </ul>
+    <h4>얼사박 만드는 법</h4>
+    <ol type="">
+        <!-- 
+            -1
+            -A
+            -a
+            -I
+            -i
+            중에 고를 수 있다.
+         -->
+        <li><b>컵</b>을 <strong>준비</strong></li> <!--스트롱은 의미를 가짐-->
+        <li><i>박카스</i>를 <em>넣기</em></li> <!--em은 의미를 가짐-->
+        <li>사이다를 넣기</li>
+        <li>얼음을 넣기</li>
+        <li><del>커피를</del> <u>한</u> 샷 &nbsp; 넣기</li>
+    </ol>
+
+<!-- 리스트 안에 리스트 넣기 -->
+    <h5>음식</h5>
+    <ul>
+        <li>양식</li>
+            <ol>
+                <li>파스타</li>
+                <li>샐러드</li>
+            </ol>
+        <li>일식</li>
+            <ol>
+                <li>초밥</li>
+                <li>튀김</li>
+            </ol>
+        <li>한식</li>
+            <ol>
+                <li>순두부찌개</li>
+            </ol>
+        <li>중식</li>
+            <ol>
+                <li>마라탕</li>
+            </ol>
+    </ul>
+
+    <!-- 숨김글씨(접은글씨) 항상 details를 적고 그 안에 summary가 들어가야 함 -->
+    <details>
+        <summary>Title</summary>
+        <ul>
+            <li>random tags</li>
+        </ul>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas voluptates ratione corporis libero reprehenderit dolor doloremque temporibus quasi atque, error fuga sunt nisi dolorem quae deleniti tempore at quos obcaecati.</div>
+    </details>
+
+
+    <h3>image & a tag</h3>
+    <!-- img 속성
+        -src : 이미지 경로
+        -art : 이미지 설명
+    -->
+
+    <!-- a 태그 속서
+        -href : 이동 경로
+        -target : 웹 페이지가 열릴 위치
+        -title : a태그에 대한 설명 (이미지 위에 커서를 올리면 설명이 나옴)
+    -->
+
+    <img src="https://c.files.bbci.co.uk/12B60/production/_109004667_02untitledgoosegamescreen3840x2160.png" alt="나쁜거위의사진" width="500"/>
+
+    <br>
+
+    <img src="/html/img/untitled-goose-game.jpg" width="300"> 
+    <!-- 위의 경로는 절대경로여서 추천 안함..... -->
+
+    <img src="./img/untitled-goose-game.jpg" width="300">
+    <!-- 위의 경로는 상대경로이다. 협업할때 추천한다. -->
+
+    <!-- 
+        - 상대경로 : 현재 위치로부터 경로를 찾는 것
+        - 절대경로 : 상단의 폴더부터 차례대로 경로를 찾는 것 -->
+
+    <br>
+    <br>
+    <a href="https://www.naver.com" target="_blank" 
+    title="mouse 커서를 올리면 나타나는 문자입니다.">go to naver</a>
+    <br>
+    <br>
+    <a href="./cafe.html">카페메뉴</a>
+    <br>
+    <br>
+<!--현재보다 위에 문서를 찾기 위해서는 ..을 쓰면된다. 부모폴더를 가리킨다...-->
+
+    <a href="https://www.google.com" target="_blank" alt="구글로이동" title="구글로이동"></alt><img src="./img/colourful-google-logo-on-white-background-free-vector.jpg" width="300"> </a>
+    <br>
+
+
+<!--form태그는 정보를 서버로 전송하기 위한 것 
+
+    form 태그 안에는 <input> 태그가 있다.
+
+    input의 type으로는 약 10여가지가 있다.....
+        butten : 버튼이다. 누를 수 있다.
+        text : 글씨를 입력(인풋)할 수 있다.
+        p : 비밀번호다. 사용자는 뭐라고 입력했는지 볼 수 없다. 
+        
+    
+    form 내부에서 작동하는 <select> 태그가 있다.
+        드롭다운 메뉴 구현할 수 있다...
+    
+        -->
+</body>
+</html>

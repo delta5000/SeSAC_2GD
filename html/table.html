@@ -1,0 +1,59 @@
+<!--table 내부에 tr 내부에 td -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width="200" height="200" 
+    align="center" bgcolor="yellow" bordercolor="red">
+    <caption>숫자 table</caption>
+
+    <!--빨간 글씨인 이유는 스타일을 주고 있기 때문임.
+         스타일은 css로 하는게 좋아서 지양하라고 빨간글씨로 나오는 것.-->
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <table border="1" cellspacing="0" cellpadding="10" >
+        <caption>가격표</caption>
+        <tr>
+            <th>메뉴</th>
+            <th>가격</th>
+            <th>비고</th>
+        </tr>
+        <tr>
+            <td>마라탕</td>
+            <td>백만원</td>
+            <td>매움</td>
+        </tr>
+        <tr>
+            <td>양꼬치</td>
+            <td>천만원</td>
+            <td rowspan="2">안매움</td>
+        </tr>
+        <tr>
+            <td>참치김밥</td>
+            <td>삼천만원</td>
+
+        <tr>
+            <td>순대</td>
+            <td colspan="2">이억</td>
+            
+        </tr>
+            
+        </tr>
+    </table>
+</body>
+</html>
