@@ -1,0 +1,27 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: salmon;
+    line-height: 100px;
+}
+/* 가상 클래스 선택자
+- hover, active, visited, focus, checked
+- 선택자:hover{} : 요소에 마우스가 올라가 있는 동안
+- 선택자:active{} : 요소에 마우스클릭 or 엔터가 눌리는 동안
+- 선택자:focus{} : 요소에 포커스가 머물러 있는 동안
+- :visited : 요소가 링크일 떄, 방문했다면 스타일 변경(a태그)
+- :checked : 요소가 체크되었을 때(라디오나 체크박스)
+*/
+
+.div1:hover {
+    background-color: aquamarine;}
+
+.div1:active {background-color: blue;}    
+
+input:focus{background-color: blueviolet;
+color: pink; outline-color: yellowgreen}
+
+a:visited{color: plum;}
+
+input#rabbit:checked + label{background-color:salmon; brown;}

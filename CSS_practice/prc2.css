@@ -1,0 +1,20 @@
+.lion{color: sienna;}
+/* 전체 적용 */
+
+ul > .lion {background-color: yellowgreen;}
+/* ul 내부의 lion에만 적용 */
+
+#tiger {background-color: yellow;}
+/* 호랑이에만 배경*/
+
+p.lion{background-color: red;}
+/* p태그중에서 클라스가lion인 것에만 적용 */
+
+div.zoo .lion{font-weight: bold;}
+/* 동물원에 있는 사자만 글자를 두껍게 */
+
+#tiger + li{background-color: skyblue;}
+/* 호랑이 뒤에 있는 팬더 선택 */
+
+ul > li.lion ~ li{background-color: orange;}
+/* 사파리 사자 뒤에 있는 사육사를 모두 선택 */
