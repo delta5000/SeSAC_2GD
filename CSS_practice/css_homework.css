@@ -1,0 +1,15 @@
+h1:hover{color: white; background-color: black;}
+
+textarea:hover{background-color: rgb(255, 238, 238);}
+
+input#red:checked + label{font-weight:bold; background-color:  red; color: white;}
+input#blue:checked + label{font-weight:bold;background-color: blue; color: white;}
+input#yellow:checked + label{font-weight:bold;background-color: yellow; color: rgb(0, 0, 0);}
+
+blue:checked {color: white; background-color: red;}
+
+#submit:focus{background-color: gray; color: #ea8686;}
+
+div{text-align: right;}
+
+#submit{color: white; background-color:#f96666; border: 0; border-radius: 8px; font-size: 15px; padding: 5px; width: 55px; }
