@@ -1,0 +1,34 @@
+.font-link{font-family: 'Diphylleia', serif;}
+
+
+ 
+.font-import{
+    font-family: 'Moirai One', serif;
+}
+
+  @font-face {
+    font-family: 'HSJiptokki-Round';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSJiptokki-Round.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+
+}
+.noonnu-font{font-family: 'HSJiptokki-Round', serif;}
+
+.container {
+    width: 500px;
+    background-color: rgb(14, 110, 194);
+}
+
+.sentences{
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center;
+
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
