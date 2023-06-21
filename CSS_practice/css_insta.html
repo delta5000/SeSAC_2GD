@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+        .insta{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(30deg, red, blue);
+            border-radius: 50%;
+          
+            position: relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .pic{
+
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            border-radius: 50%;
+            
+            outline: 5px solid white;
+            background-image: url(https://openimage.interpark.com/goods_image_big/2/1/8/5/8513152185_l.jpg);
+            background-size: contain;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="insta">
+            <div class="pic"></div> 
+        </div>    
+    </div>
+</body>
+</html>
