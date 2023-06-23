@@ -1,0 +1,30 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.box1:hover {
+  width: 200px;
+}
+
+.box2:hover {
+  transform: translateX(50%) skewX(-45deg);
+}
+
+.box3:hover {
+  transform: translateX(300px) rotate(180deg);
+
+  background-color: red;
+  border-radius: 50%;
+}
+/* ﻿원근법 이동 크기 회전 기울임 ﻿ */
+
+.box4:hover {
+  transition: all 2s;
+  transform: translateY(50px) scale(2) rotateY(360deg);
+  background-color: yellow;
+}

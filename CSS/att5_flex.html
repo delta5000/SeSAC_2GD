@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <link rel="stylesheet" href="att5_flex.css" />
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <div class="container2">
+      <div class="item1 a">1</div>
+      <div class="item2 a">2</div>
+      <div class="item3 a">3</div>
+      <div class="item4 a">4</div>
+      <div class="item5 a">5</div>
+    </div>
+    <div class="container">
+      <div class="item1 items">1</div>
+      <div class="item2 items">2</div>
+      <div class="item3 items">3</div>
+      <div class="item4 items">4</div>
+      <div class="item5 items">5</div>
+    </div>
+    <hr />
+    <ol>
+      <li>CSS3부터 나타난 방식</li>
+      <li>화면 레이아웃을 구성할 때 가장 많이 사용하는 방법</li>
+      <li>
+        부모요소(컨테이너)에 flex를 선언하면 자식 요소의 레이아웃이 변경됨
+      </li>
+    </ol>
+    <ul>
+      <li>flex 속성을 갖는 요소, flex 부모 요소</li>
+      <li>
+        컨테이너에 적용 가능한 속성이 있음
+        <ol>
+          <li>
+            flex-direction
+            <ol>
+              <li>기본설정은 row 수평정렬 (좌->우)</li>
+              <li>row-reverse 수평정렬 (우->좌)</li>
+              <li>columm 수직정렬 (위->아래)</li>
+              <li>columm-reverse 수직정렬 (아래->위)</li>
+            </ol>
+          </li>
+          <li>
+            flex-wrap
+            <ul>
+              <li>줄바꿈 할지 말지 정하는 속성이다.</li>
+            </ul>
+            <ol>
+              <li>no-wrap 기본설정. 줄바꿈 안함</li>
+              <li>wrap 줄바꿈함</li>
+              <li>wrap-reverse 줄바꿈을 하는데 아이템을 역순으로 배치</li>
+            </ol>
+          </li>
+          <li>
+            justify-content
+            <ol>
+              <li>
+                주축에 대한 정렬 방법. 아이템들을 어떻게 배치시킬 것 인지.
+              </li>
+              <li>flex-start : item들을 주 축의 시작지점 기준으로 나열</li>
+              <li>flex-end : 아이템들을 주 축의 끝 지점 기준으로 나열</li>
+              <li>center:주축 방향으로 중앙 정렬</li>
+              <li>
+                space-between : 처음과 마지막 아이템들을 양 끝에 붙이고
+                나머지영역 똑같이 나눠가짐
+              </li>
+              <li>
+                space-around : 양 끝 영역이 1이라면 아이템과 아이템 사이의
+                영역은 2
+              </li>
+              <li>space-evenly: 모든 영역 공평하게 나눠 가짐</li>
+            </ol>
+          </li>
+          <li>
+            align-items
+            <ol>
+              <li>교차축에 대해서 아이템을 배치하는 방법이다.</li>
+              <li>
+                stratch 기본속성 아이템이 높이가 없을 때 컨테이너 내부에 할당된
+                교차축의 크기만큼 늘어난다.
+              </li>
+              <li>flex-start</li>
+              <li>flex-end</li>
+              <li>center</li>
+            </ol>
+          </li>
+
+          <li>
+            align-content
+            <ol>
+              <li>뭉쳐 다니는 것이다.</li>
+              <li>교차축에 대한 여러줄 정렬 방법</li>
+              <li>
+                속성은 저스티파이콘텐트랑 동일하다. 차이점은 저스티파이는 주축,
+                얼라인콘텐츠는 교차축.
+              </li>
+              <li>
+                플랙스-랩이 두줄 이상일 때 의미가 있다. 여러줄이 뭉쳐다니는
+                속성이기 때문에.
+              </li>
+
+              <li>flex-start : item들을 교차축의 시작지점 기준으로 나열</li>
+              <li>flex-end : 아이템들을 교차축의 끝 지점 기준으로 나열</li>
+              <li>center:교차축 방향으로 중앙 정렬</li>
+              <li>
+                space-between : 처음과 마지막 아이템들을 양 끝에 붙이고
+                나머지영역 똑같이 나눠가짐
+              </li>
+              <li>
+                space-around : 양 끝 영역이 1이라면 아이템과 아이템 사이의
+                영역은 2
+              </li>
+              <li>space-evenly: 모든 영역 공평하게 나눠 가짐</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ul>
+    <hr />
+    <h3>flex-item</h3>
+    <div>플렉스 속성을 가지는 컨테이너의 자식요소들</div>
+    <div>아이템에 적용 가능한 속성이 있음.많이 쓰이지는 않음</div>
+    <ol>
+      <li>order</li>
+      <li></li>
+    </ol>
+  </body>
+</html>

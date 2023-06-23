@@ -1,0 +1,53 @@
+.img-box {
+  width: 200px;
+  height: 250px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+img:hover {
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin-bottom: 1rem;
+}
+
+.box1:hover {
+  /* *transition
+    
+    -transition-property:속성이름
+    어떤 속성에 트렌지션 효과를 줄건지
+
+    -transition --duration (트렌지션의 필수 속성)
+     몇초동안 변화가 일어날지
+
+     -transition-timing-function
+     ease(default)
+
+     -transition-delay : 동작의 시작 시간을 얼마나 늦출지
+    */
+  background-color: rebeccapurple;
+  width: 200px;
+  transition-property: width;
+  transition-duration: 1s;
+  transition: property duration timing-function delay;
+}
+
+.box2 {
+  transition: all 2s ease 1s;
+}
+
+.box2:hover {
+  opacity: 0.5;
+  height: 150px;
+  background-color: aqua;
+  transform: translateX(50px);
+}
