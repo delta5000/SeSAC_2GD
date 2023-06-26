@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 헤더 만들기</title>
+    <script
+      src="https://kit.fontawesome.com/c848ab7581.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .box {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+      }
+
+      .box .box1 {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+
+      header {
+        width: 100%;
+        height: 100px;
+        background-color: lightblue;
+        z-index: 100;
+        position: fixed;
+      }
+      header .inner {
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        background-color: lightblue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      header .inner i {
+        margin-right: 100px;
+        margin-left: 0px;
+        font-size: 30px;
+      }
+      header .inner .menu {
+        display: flex;
+        flex-direction: row;
+      }
+      header .inner .menu li {
+        margin-left: 15px;
+        font-size: large;
+        font-weight: 700;
+      }
+
+      /* 768px이하일 때의 헤더 */
+
+      header .small-menu {
+        display: none;
+      }
+      header .small-menu li {
+      }
+
+      @media (max-width: 768px) {
+        header {
+          width: 100%;
+          height: 60px;
+          position: relative;
+          /* display: flex;
+          flex-direction: column;
+          justify-content: center; */
+        }
+        header .inner {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+        }
+        header .inner i {
+          text-align: center;
+          margin-left: 100px;
+        }
+        header .small-menu {
+          text-align: center;
+          display: block;
+          background-color: aliceblue;
+        }
+        header .small-menu li {
+          padding: 20px;
+          margin-top: 0px;
+        }
+        header .inner .menu {
+          display: none;
+        }
+        header .inner:hover {
+          background-color: blue;
+        }
+        header .small-menu:hover {
+        }
+
+        header .small-menu li:hover {
+          background-color: aqua;
+          margin: 0;
+        }
+
+        .box {
+          display: flex;
+          flex-direction: column;
+        }
+        .box .box1 {
+          width: 100px;
+          height: 100px;
+          background-color: coral;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <i class="fa-solid fa-igloo" style="color: #ffffff"></i>
+        <ul class="menu">
+          <li>메뉴1</li>
+          <li>메뉴2</li>
+          <li>메뉴3</li>
+          <li>메뉴4</li>
+        </ul>
+      </div>
+      <ul class="small-menu">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+      </ul>
+    </header>
+  </body>
+</html>
