@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        width: 100%;
+        grid-template-rows: repeat(4, 100px);
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 100px;
+      }
+      .item {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .item1 {
+        background-color: #f94144;
+        grid-column: span 4;
+      }
+
+      .item2 {
+        grid-row: span 2;
+        background-color: #f3722c;
+      }
+      .item3 {
+        background-color: #f9c74f;
+        grid-column: span 2;
+      }
+      .item4 {
+        background-color: #43aa8b;
+        grid-row: span 2;
+      }
+      .item5 {
+        background-color: #f8961e;
+      }
+      .item6 {
+        background-color: #90be6d;
+      }
+      .item7 {
+        background-color: #4444ff;
+        grid-column: span 4;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">#F94144</div>
+      <div class="item item2">#F3722C</div>
+      <div class="item item3">#F9C74F</div>
+      <div class="item item4">#43AA8B</div>
+      <div class="item item5">#F8961E</div>
+      <div class="item item6">#90BE6D</div>
+      <div class="item item7">#4444FF</div>
+    </div>
+  </body>
+</html>
