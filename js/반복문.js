@@ -49,13 +49,7 @@ console.log(sum);
 
 // %13 해서 나머지가 0인걸 찾으면 될 것 같음..
 
-for (let i = 0; i < 10000; i++) {
-  if (i % 13 === 0 && i % 2 === 1) {
-    console.log(i);
-  }
-}
-
-for (let i = 0; i < 10000; i++) {
+for (i = 0; i < 10000; i + 1) {
   if (i % 13 === 0 && i % 2 === 1) {
     console.log(i);
   }
