@@ -1,0 +1,583 @@
+
+/* max-width = 이 숫자보다 작은 화면에서는.. */
+
+
+
+  header{
+    display: none;
+  }
+
+  body{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+  
+
+@font-face {
+  font-family: "NanumSquare";
+  src: url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+
+  font-family: "NanumSquare", "Roboto", sans-serif;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #232323;
+  color: white;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-image: url(./naver/main-bg-top-pc@2x.f7fd79b71aa05b0b97597c45649db571.png);
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  top: 0%;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  z-index: 2;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 헤더 로고 */
+.topLogo {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-image: url(./naver/logo.a61f5142308413b313275c691aa13c9a.gif);
+}
+
+/* 헤더 왼쪽 */
+body header .headerUl1 {
+  font-weight: 900;
+  line-height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .headerUl1 li {
+  list-style: none;
+}
+
+/* 헤더 중앙 */
+body header .headerUl2 {
+  display: flex;
+}
+body header .headerUl2 li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+/* 헤더 오른쪽 */
+body header .headerUl3 {
+  display: flex;
+}
+body header .headerUl3 > button:nth-child(1) {
+  margin-right: 10px;
+  width: 93.32px;
+  height: 38.4px;
+  border-radius: 20px;
+ color: #ffffff;
+  background-color:rgba(0, 0, 0, 0);
+}
+
+/* 유저 아이콘 */
+body header .headerUl3 .userIcon {
+  border-radius: 50%;
+  width: 37.99px;
+  height: 37.99px;
+  background-size: contain;
+  background-image: url(./naver/default-profile-image@2x.bee43f1e5d078cfb854a898590a35694.png);
+}
+/* ---------------헤더 끝------------- */
+
+main {
+  width: 100vw;
+}
+
+.mainIntro {
+  padding: 166px 0 50px;
+}
+
+/* 영어로 네이버 인플루언서 센터 */
+main div strong {
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 1em;
+  display: block;
+  margin-top: 100px;
+}
+
+.mainIntro > div:nth-child(2) {
+  font-size: 30px;
+}
+
+/* 홈베너 글씨 중첩 */
+.mainHome {
+  position: relative;
+}
+
+.mainHome .mainHomeWord {
+  position: absolute;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.mainHomeWord > div:nth-child(1) {
+  font-size: 16px;
+  opacity: 0.8;
+}
+.mainHomeWord > div:nth-child(2) {
+  font-size: 35px;
+  font-weight: 700;
+}
+.mainHomeWord > div:nth-child(3) {
+}
+.mainHome img {
+  width: 1024px;
+  border-radius: 15px;
+}
+
+/* 1째 덩어리 */
+
+/* 두 줄의 컨테이너를 모두 담고있는 컨테이너를 만들어줌 */
+.a0123 {
+  margin-top: 100px;
+  display: flex;
+  background-color: #232323;
+}
+
+/* 두줄씩 세로 배치하기 위해 컨테이너를 만들어줌 */
+.a0a1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 100px;
+}
+
+/* 두줄씩 세로 배치하기 위해 위에 컨테이너를 만들어줌. */
+.a2a3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 .a0 {
+  color: #6d8bff;
+  font-size: 50px;
+  width: 495px;
+  height: 203px;
+  font-weight: 700;
+}
+
+/* 취향을 자유롭게~ 박스 */
+.container1 .a1 {
+  cursor: pointer;
+
+  line-height: 3em;
+  border-radius: 15px;
+  width: 495px;
+  height: 810px;
+  background: linear-gradient(#ffffff23, #232323);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.272);
+}
+
+/* 인플루언서 홈 */
+.a1 div:first-child {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.a1 div:nth-child(2) {
+  font-size: 35px;
+}
+
+.a1 div:nth-child(3) {
+  color: #6d8bff;
+}
+
+/* 이미지 빼고 글자 div 3개 묶음 패딩주기위함 */
+.a1 > div:nth-child(-n + 3) {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.a1 div:nth-child(4) {
+  text-align: center;
+  padding-left: 0px;
+}
+
+/* 아름다움은 내 자신의 마음속 사진 */
+.a1 div img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.a1 div img:hover {
+  transform: scale(1.1);
+}
+
+.a2 {
+  cursor: pointer;
+  position: relative;
+
+  width: 470px;
+  height: 500px;
+  background: linear-gradient(#ffffff23, #232323);
+  border-radius: 15px;
+  line-height: 3em;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.272);
+  overflow: hidden;
+}
+
+/* 더 커진 수익과 효과적인 헤드뷰 광고 */
+.a2 > div:nth-child(1) {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.a2 > div:nth-child(2) {
+  font-size: 35px;
+  font-weight: 700;
+}
+.a2 > div:nth-child(3) {
+  color: #6d8bff;
+}
+
+.a2 > div:nth-child(-n + 3) {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.a2 > div:nth-child(4) {
+  position: relative;
+  top: 0px;
+}
+
+.a2 img {
+  width: 100%;
+  
+  transition: 1s;
+}
+
+.a2 img:hover {
+  transform: scale(1.2);
+}
+
+.a3 {
+  background: linear-gradient(#ffffff23, #232323);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  width: 470px;
+  height: 500px;
+  background-color: #232323;
+  border-radius: 15px;
+  margin-top: 10px;
+  line-height: 3em;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.272);
+
+}
+
+.a3 > div:nth-child(1){
+  opacity: 0.8;
+}
+.a3 > div:nth-child(2){
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.a3 > div:nth-child(3){
+  color: #6d8bff;
+}
+
+.a3 div img{
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top :30px
+  
+}
+.a3 div img:hover{
+  transform: scale(1.2);
+}
+
+/* ----------2번쨰 덩어리----- */
+
+.container2 {
+  width: 1000px;
+  background-color: #1c1c1c;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.onlyNaver {
+  color: #5cf0c6;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+  grid-column: 1/3;
+  padding-top: 10%;
+  margin-bottom: 80px;
+}
+
+.b1 {
+  cursor: pointer;
+  background-color: #3369dd;
+  border-radius: 15px;
+  margin-right: 20px;
+  line-height: 2em;
+}
+
+ul {
+  list-style: none;
+}
+
+.b1 > li:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.7;
+  padding-top: 40px;
+}
+
+.b1 > li:nth-child(2) {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.b1 > li:nth-child(3) {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.b1 > li:nth-child(-n + 3) {
+  padding-left: 30px;
+}
+
+.b1 img {
+  width: 100%;
+  transition: 1s;
+}
+
+.b1 img:hover {
+  transform: scale(1.2);
+}
+
+/* 맴버십 혜택 */
+.b2 {
+  cursor: pointer;
+  background-color: #fba9a9;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.b2 > li:first-child {
+  padding-top: 40px;
+  opacity: 0.8;
+}
+
+.b2 > li:nth-child(2) {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.b2 > li:nth-child(3) {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.b2 > li:nth-child(-n + 3) {
+  padding-left: 30px;
+}
+
+.b2 img {
+  width: 100%;
+  transition: 1s;
+  position: relative;
+}
+.b2 img:hover {
+  transform: scale(1.2);
+}
+
+.b3 {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 15px;
+  grid-column: 1/3;
+  background-color: #6452c7;
+  background-size: cover;
+  background-image: url(./naver/main-program-bg-2-p@2x.004f5a6c0242eba9e1b8089fbe43373e.png);
+}
+
+.b3 > div:nth-child(1) {
+  opacity: 0.8;
+  padding-top: 40px;
+}
+
+.b3 > div:nth-child(2) {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.b3 > div:nth-child(3) {
+  margin-top: 15px;
+  color: #5cf0c6;
+}
+
+.b3 div {
+  padding-left: 30px;
+}
+
+.b3 img {
+  width: 50%;
+  position: relative;
+  left: 50%;
+  bottom: 5%;
+  transition: 1s;
+}
+
+.b3 img:hover {
+  transform: scale(1.2);
+}
+
+/* 세번째 덩어리  */
+
+.container3 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 0;
+  text-align: center;
+  background-size: cover;
+  background-image: url(./naver/main-bg-bottom-p@2x.52c31ca37d17d3860b7029e3eaa57310.png);
+}
+
+.container3 div {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.container3 button:nth-child(2) {
+  cursor: pointer;
+  width: 340px;
+  height: 80px;
+  font-size: 22px;
+  border-radius: 41px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 6px -10px;
+  background-color: #4b65f7;
+  color: white;
+}
+.container3 button:nth-child(3) {
+  cursor: pointer;
+  margin-left: 20px;
+  width: 340px;
+  height: 80px;
+  font-size: 22px;
+  border-radius: 41px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 6px -10px;
+  background-color: #ffffff;
+}
+
+
+.top > a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.top > a > i {
+  font-size: 16px;
+}
+
+.top hr {
+  opacity: 0.5;
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
+footer {
+  margin: 50px 0px 100px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+footer button{
+  width: 80px;
+  height: 29px;
+  background-color: #323232;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: 0;
+  color:#999999
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+}
+
+footer ul hr {
+  background: #ffffff;
+  opacity: 0.7;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+footer .copy {
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+footer {}
+
+
+@media screen (max-width: 1230px) {
+  .container2{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
