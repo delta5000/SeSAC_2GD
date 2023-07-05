@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://in.naver.com/discover&size=16"
+      type="image/x-icon"
+    />
     <style>
       @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
@@ -174,5 +179,17 @@
         <div></div>
       </footer>
     </main>
+    <script>
+      // 헤더 투명화
+
+      window.addEventListener("scroll", () => {
+        console.log(scrollY);
+        if (scrollY > 100) {
+          document.querySelector("header").style.opacity = "0.2";
+        } else {
+          document.querySelector("header").style.opacity = "1";
+        }
+      });
+    </script>
   </body>
 </html>
