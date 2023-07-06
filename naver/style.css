@@ -42,7 +42,7 @@ header {
   top: 0%;
   display: flex;
   justify-content: space-around;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   z-index: 2;
   align-items: center;
 }
@@ -122,7 +122,7 @@ main {
 }
 
 /* 영어로 네이버 인플루언서 센터 */
-main div strong {
+main div strong:nth-child(1) {
   font-size: 70px;
   font-weight: 900;
   line-height: 1em;
@@ -132,7 +132,10 @@ main div strong {
   width: 1000px;
 }
 
-.mainIntro > div:nth-child(2) {
+main div strong:nth-child(2) {
+  display: none;
+}
+.mainIntro > div:nth-child(3) {
   font-size: 30px;
 }
 
@@ -157,9 +160,14 @@ main div strong {
 }
 .mainHomeWord > div:nth-child(3) {
 }
-.mainHome img {
+/* 연보라배경 */
+.mainHome .img1 {
   width: 1024px;
   border-radius: 15px;
+}
+
+.mainHome .img2 {
+  display: none;
 }
 
 /* 1째 덩어리 */
@@ -583,5 +591,32 @@ footer {
   header {
     display: none;
     background-color: rgba(0, 0, 0, 0.151);
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  main div strong:nth-child(1) {
+    display: none;
+  }
+  main div strong:nth-child(2) {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1em;
+    display: block;
+    margin-top: 100px;
+    text-align: left;
+    width: 648px;
+  }
+  .mainHome .img1 {
+    display: none;
+  }
+
+  .mainHome .img2 {
+    width: 648px;
+    display: block;
+    border-radius: 15px;
   }
 }

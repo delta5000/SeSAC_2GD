@@ -50,6 +50,8 @@
           NAVER <br />
           INFLUENCER CENTER
         </strong>
+        <!-- max 1200 d일 때는 아래로 바뀐다 -->
+        <strong> NAVER<br />INFLUENCER<br />CENTER </strong>
         <div>인플루언서에게 필요한 모든 것</div>
         <div>
           네이버 인플루언서 센터는 여러분들에게 다양한 지원 프로그램을 운영하고
@@ -65,7 +67,12 @@
           <div>네이버가 제공하는<br />브랜드 제휴 솔루션</div>
           <div>지금 만나보세요</div>
         </div>
-        <img src="./naver/NIC-메인-홈배너_6종_2048_820_v2-3.png" />
+        <!-- 보라색 배경 -->
+        <img class="img1" src="./naver/NIC-메인-홈배너_6종_2048_820_v2-3.png" />
+        <img
+          class="img2"
+          src="./naver/NIC-메인-홈배너_6종_1296_1160_v2-3.png"
+        />
       </div>
       <div class="a0123">
         <div class="a0a1">
@@ -180,14 +187,13 @@
       </footer>
     </main>
     <script>
-      // 헤더 투명화
-
+      //스크롤 내리면 헤더 배경만 투명->반투명 변경
       window.addEventListener("scroll", () => {
         console.log(scrollY);
         if (scrollY > 100) {
-          document.querySelector("header").style.opacity = "0.1";
+          document.querySelector("header").style.backgroundColor = "#232323cc";
         } else {
-          document.querySelector("header").style.opacity = "1";
+          document.querySelector("header").style.backgroundColor = "#23232300";
         }
       });
     </script>
