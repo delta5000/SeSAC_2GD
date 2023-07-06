@@ -45,7 +45,6 @@ header {
   background-color: black;
   z-index: 2;
   align-items: center;
-  transition: 1.5s;
 }
 
 .hidden {
@@ -74,6 +73,11 @@ body header .headerUl1 li {
 }
 
 /* 헤더 중앙 */
+
+a {
+  text-decoration: none;
+  color: white;
+}
 body header .headerUl2 {
   display: flex;
 }
