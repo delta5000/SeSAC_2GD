@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -104,13 +104,33 @@
 
       //.text-center 내부에 img ,h3, div 순서대로 들어간다.
 
-      textCenter = document.getElementsByClassName("text-center");
-      const img = document.createElement("img");
-      const h3 = document.createElement("h3");
-      const div = document.createElement("div");
+      textCenter = document.querySelector("section");
 
-      div.classList("article-box");
-      textCenter.append(img, h3, div);
+      for (i = 0; i < icecreams.length; i++) {
+        console.log(icecreams[i]);
+        const article = document.createElement("article");
+        article.classList.add("article-box");
+        textCenter.append(article);
+
+        const h3A = document.createElement("h3");
+        const divA = document.createElement("div");
+
+        h3A.classList.add("text-center");
+        divA.classList.add("text-center");
+
+        article.innerHTML =
+          "<img src=" +
+          "./img/icecream" +
+          Number(i + 1) +
+          ".png" +
+          " class='img-box'>";
+
+        h3A.innerText = "Top" + Number(i + 1);
+        divA.innerText = icecreams[i];
+
+        textCenter.append(article);
+        article.append(h3A, divA);
+      }
     </script>
   </body>
 </html>
