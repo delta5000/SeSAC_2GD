@@ -91,34 +91,41 @@ input : 현재 input에 변경사항이 존재하는 순간을 계속 인식
 
 shift, ctrl 등 입력값이 변하지 않는다면 이벤트 발생 하지 않음*/
 
+// --------------------------------------------------------------------------
 //폼이 제출되는 이벤트
 //submit form에 적용하는 이벤트
-const todoForm = document.querySelector("#todo-form");
-const todos = document.querySelector(".todos");
+const todoForm = document.querySelector("#todo-form"); //폼테그 선언
+const todos = document.querySelector(".todos"); //ul 리스트들 선언
 
 todoForm.addEventListener("submit", function (event) {
   event.preventDefault();
   //폼이 실제로 제출되지 않도록 이벤트를 막는 것
   //새로고침 방지
 
-  const todoInput = document.querySelector('[name="todo"]');
+  const todoInput = document.querySelector('[name="todo"]'); //속성명을 쓸떄는 대괄호 이름을 적어줘야한다.
   console.log(todoInput.value); // 내용 받아오는건 .value 인 것 기억하기!
   const todo = todoInput.value;
 
-  // const li = document.createElement("li");
-  // //<li></li>
-  // // li.textContent = todo;
-  // li.append(todo);
+  const li = document.createElement("li");
+  //<li></li>
+  // li.textContent = todo;
+  // li.append(todo); //li에 투두 텍스트를 집어넣고
 
-  // todos.append(li);
+  // console.log(li);
+
+  // todos.append(li); //ul 태그 안에  li붙이기
+
   //만약에 제출할 때 공백이 들어왔을 때는 추가하지 않으려면??
   //답:앞뒤 공백 없애주는 trim 사용
+
   if (todoInput.value.trim() !== "") {
     const li = document.createElement("li");
     li.append(todoInput.value);
+
     todos.append(li);
   }
 
   //엔터 이후에 입력창 비우기
   todoInput.value = "";
 });
+// ----------------------------------------------------------

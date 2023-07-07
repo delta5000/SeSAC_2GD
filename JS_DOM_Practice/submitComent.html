@@ -29,10 +29,36 @@
       // - [ ] <ul class="comment-list"> 태그에 li를 추가합니다.
       // - [ ] 아이디 input과 댓글 input을 초기화해야 합니다.
 
+      const form = document.querySelector("form");
+
+      console.log(form);
+
       const userid = document.querySelector("#userid");
       const comment = document.querySelector("#comment");
       const btn = document.querySelector("button");
-      const commentList = document.querySelector("ul");
+      const ul = document.querySelector("ul");
+
+      //아이디 넣는 창 = userid = 새로고침 방지 ['name="userid"'] 넣고...
+      //댓글 넣는 창 = comment = 여기도 새로고침 방지 넣고...
+
+      //ul 내부에 그럼 리스트가 나와야 하고... 그건 크리에이트 엘리먼트고.. 만들어서 ul에 붙이고..
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const idValue = userid.value;
+
+        const CValue = comment.value;
+
+        console.log(idValue);
+
+        li = document.createElement("li");
+
+        li.innerHTML = `<b>${idValue}</b> - ${CValue}`;
+
+        console.log(li);
+        ul.append(li);
+      });
     </script>
   </body>
 </html>
