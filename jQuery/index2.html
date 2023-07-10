@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .color-blue {
+        color: blue;
+      }
+
+      .fs-50 {
+        font-size: 50px;
+      }
+
+      .bg-pink {
+        background-color: pink;
+      }
+    </style>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
@@ -44,18 +57,59 @@
     <button type="button" onclick="changeHtmlJs();">자스</button>
     <button type="button" onclick="changeHtmlJq();">자쿼</button>
     <br />
-    <!--  -->
+    <!-- 버튼은 서브밋속성으로 새로고침되는 속성이라 
+      타입 버튼을 넣어줘 새로고침을 안하게 만들어줌 -->
     <h2>요소 추가</h2>
+    <ul class="colors">
+      <li class="orenge">orenge</li>
+      <li class="green">green</li>
+      <li class="navy">navy</li>
+    </ul>
     <h4>요소 추가 : append()</h4>
+    <button type="button" onclick="appendJs();">Js로 append</button>
+    <button type="button" onclick="appendJq();">Jq로 append</button>
+
     <h4>요소 추가 : prepend()</h4>
+    <button type="button" onclick="prependJs();">Js로 prepend</button>
+    <button type="button" onclick="prependJq();">Jq로 prepend</button>
     <h4>요소 추가 : before()</h4>
+    <button type="button" onclick="beforeJs();">Js로 before</button>
+    <button type="button" onclick="beforeJq();">Jq로 before</button>
     <h4>요소 추가 : after()</h4>
+    <button type="button" onclick="afterJs();">Js로 after</button>
+    <button type="button" onclick="afterJq();">Jq로 after</button>
 
     <h2>요소 삭제</h2>
+    <ul class="num">
+      <li>1</li>
+      <li id="li2">2</li>
+      <li>3</li>
+    </ul>
     <h4>요소 삭제: remove()</h4>
+    <button type="button" onclick="removeJs();">Js로 remove</button>
+    <button type="button" onclick="removeJq();">Jq로 remove</button>
     <h4>요소 삭제: empty()</h4>
-
+    <button type="button" onclick="emptyJs();">Js로 empty</button>
+    <button type="button" onclick="emptyJq();">Jq로 empty</button>
     <h2>요소 탐색</h2>
+    <!-- .ancestor>.parent>.child${자식$}*3 -->
+    <div class="ancestor">
+      <div class="parent">
+        <div class="child1">자식1</div>
+        <div class="child2">자식2</div>
+        <div class="child3">자식3</div>
+      </div>
+    </div>
+    <button type="button" onclick="findParent();">부모찾기</button>
+    <button type="button" onclick="findParents();">조상찾기</button>
+    <button type="button" onclick="findNext();">다음 형제 찾기</button>
+    <button type="button" onclick="findPrev();">이전 형제 찾기</button>
+    <button type="button" onclick="findChirdren();">자식 모두 찾기</button>
     <h2>클래스 조작</h2>
+    <p id="hi" class="color-blue">안녕하세요</p>
+    <button type="button" onclick="addClass()">클래스 추가</button>
+    <button type="button" onclick="removeClass()">클래스 삭제</button>
+    <button type="button" onclick="hasClass()">클래스 유무 확인</button>
+    <button type="button" onclick="toggleClass()">클래스 토글</button>
   </body>
 </html>

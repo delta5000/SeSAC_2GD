@@ -55,6 +55,11 @@
         margin-left: 0px;
         font-size: 30px;
       }
+
+      .fa-bars {
+        display: none;
+      }
+
       header .inner .menu {
         display: flex;
         flex-direction: row;
@@ -86,6 +91,7 @@
           display: flex;
           flex-direction: column;
           margin: 0;
+          position: relative;
         }
         header .inner i {
           text-align: center;
@@ -93,7 +99,7 @@
         }
         header .small-menu {
           text-align: center;
-          display: block;
+          display: none;
           background-color: aliceblue;
         }
         header .small-menu li {
@@ -123,6 +129,12 @@
           height: 100px;
           background-color: coral;
         }
+        .fa-bars {
+          display: block;
+          position: absolute;
+          right: 1vw;
+          cursor: pointer;
+        }
       }
     </style>
   </head>
@@ -130,6 +142,7 @@
     <header>
       <div class="inner">
         <i class="fa-solid fa-igloo" style="color: #ffffff"></i>
+        <i class="fa-solid fa-bars"></i>
         <ul class="menu">
           <li>메뉴1</li>
           <li>메뉴2</li>
@@ -144,5 +157,18 @@
         <li>menu4</li>
       </ul>
     </header>
+
+    <script>
+      const small = document.querySelector(".small-menu");
+      const bar = document.querySelector(".fa-bars");
+
+      bar.addEventListener("click", function () {
+        if (small.style.display === "block") {
+          small.style.display = "none";
+        } else {
+          small.style.display = "block";
+        }
+      });
+    </script>
   </body>
 </html>
