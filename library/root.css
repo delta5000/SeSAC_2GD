@@ -1,0 +1,12 @@
+:root {
+  /* color */
+  --main-red: #dc3545;
+
+  /* text */
+  --text-black-800: #080808;
+
+  /* padding & margin */
+  --base-space: 8px;
+
+  /* 그림자 색, 각종 테마 색, 폰트 크기 */
+}

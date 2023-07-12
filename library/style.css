@@ -1,0 +1,15 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+@import url(./reset.css);
+@import url(./root.css);
+
+/* 노말라이즈와 리셋 두개를 같이 쓰는건 의미가 없다. */
+
+h1 {
+  margin: calc(var(--bace-space * 2)) 0;
+  background-color: var(--main-green);
+  color: var(--text-black-600);
+}
+
+h2 {
+  background-color: var(--main-blue);
+}

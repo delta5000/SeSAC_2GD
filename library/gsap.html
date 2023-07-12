@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- gsap기본 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- gsap 스크롤트리거 (기본이랑 둘 다 있어야함) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="gsap.js"></script>
+    <link rel="stylesheet" href="reset.css" />
+
+    <title>Document</title>
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      .section1 {
+        position: ;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(skyblue, #ffff0084);
+      }
+      .section1 .cloud {
+        width: 35vh;
+        position: absolute;
+      }
+
+      .section1 .cloud1 {
+        left: 5vw;
+      }
+
+      .section1 .cloud2 {
+        left: 50vw;
+      }
+
+      .section1 .sea {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .section1 .sun {
+        position: absolute;
+        width: 20vw;
+        right: 2vw;
+      }
+
+      .section2 {
+        position: relative;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .section2 div {
+        color: orangered;
+        font: 700 8vw/100vh "serif";
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="section1">
+      <img src="./practice/cloud1.png" alt="cloud" class="cloud cloud1" />
+      <img src="./practice/cloud1.png" alt="cloud" class="cloud cloud2" />
+      <img src="./practice/sea.png" alt="sea" class="sea" />
+      <img src="./practice/sun.png" alt="sun" class="sun" />
+    </section>
+    <section class="section2">
+      <div class="div">Practice</div>
+    </section>
+  </body>
+</html>
