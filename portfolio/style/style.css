@@ -1,0 +1,149 @@
+@media (max-width: 1920px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: scroll;
+
+    background-image: linear-gradient(
+      rgba(105, 131, 158, 0.139),
+      rgb(112, 112, 139)
+    );
+  }
+  .sec1 {
+    display: none;
+    width: 600px;
+    height: 1200px;
+  }
+
+  .mobile {
+    display: block;
+
+    width: 600px;
+    height: 1200px;
+    color: black;
+    background-color: white;
+  }
+
+  .top a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  .top {
+    display: inline;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 70px;
+    height: 60px;
+    margin-top: 0;
+    padding: auto;
+    border: 2px solid black;
+    border-radius: 10%;
+    background-color: rgb(217, 217, 255);
+  }
+
+  .sec2 {
+    width: 600px;
+  }
+  div {
+    width: 600px;
+
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  img {
+    width: 600px;
+  }
+  iframe {
+    width: 600px;
+    height: 400px;
+  }
+
+  object {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: scroll;
+
+    background-image: linear-gradient(
+      rgba(105, 131, 158, 0.139),
+      rgb(112, 112, 139)
+    );
+  }
+  .sec1 {
+    display: none;
+    width: 375px;
+    height: 1200px;
+  }
+
+  .mobile {
+    display: block;
+
+    width: 370px;
+    height: 1200px;
+    color: black;
+    background-color: white;
+  }
+
+  .top a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  .top {
+    display: inline;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 70px;
+    height: 60px;
+    margin-top: 0;
+    padding: auto;
+    border: 2px solid black;
+    border-radius: 10%;
+    background-color: rgb(217, 217, 255);
+  }
+
+  .sec2 {
+    width: 370px;
+  }
+  div {
+    width: 600px;
+
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  img {
+    width: 600px;
+  }
+  iframe {
+    width: 600px;
+    height: 400px;
+  }
+
+  object {
+    width: 600px;
+    height: 600px;
+  }
+}
